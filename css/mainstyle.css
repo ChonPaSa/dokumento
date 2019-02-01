@@ -1,0 +1,216 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {								
+	max-width: 100%;
+	height: auto;
+}
+body {
+	font: 16px Arial, sans-serif;
+}
+
+/************Navigation*************************/
+#topmenu {
+	position: fixed;
+	top: 80px;
+	left: -190px;
+	width: 190px;
+	transition: all 1s;
+}
+#topmenu h2 a {
+	display: block;
+	position: absolute;
+	right: -40px;
+	width: 40px;
+	padding-left: 0;
+	text-align: center;
+}
+#topmenu ul {
+	list-style: none;
+}
+#topmenu a {
+	text-decoration: none;
+	color: white;
+	background: rgba(11,92,207, 0.8);
+	display: block;
+	font-weight: bold;
+	padding-left: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid white;
+}
+ 
+#topmenu:target {
+	left:0;
+}
+
+#topmenu h2 a[href="#close"], #topmenu:target h2 a[href="#topmenu"] 
+{
+	display:none;
+}
+
+#topmenu:target h2 a[href="#close"] {
+	display:block;
+}
+
+#topmenu ul li a:hover{
+	background:rgba(204,204,204,0.9);
+	 
+}
+
+
+/**********************Startpage**********/
+
+.landing{
+	position:relative;
+	top: 20%;
+	left:20%;
+	width :80%
+}
+
+/*****************Text*****/
+h1{
+	margin: 2%;
+	text-align: center;
+	color: rgb(11,92,207);
+	font-size: 3rem;
+}
+h2{
+	margin: 2%;
+	color: rgb(11,92,207);
+}
+main{
+	width:90%;
+	margin: 0 auto;
+	
+}
+
+i{
+	font-size: 2.5rem;
+	color: rgb(11,92,207);
+}
+i.small{
+	font-size: 1.1rem;
+	color: black;
+}
+a{
+	padding-right: 10px;
+	color: rgb(11,92,207);
+}
+a:visited{
+	color: rgb(11,92,207);
+}
+
+sup{
+	color: red;
+}
+
+.error{
+	color: #cc0000;
+	font-size: 0.8rem;
+	margin-left: 3%;
+}
+
+/******list******/
+dt{
+	font-weight:bold;
+	color:rgb(11,92,207);
+}
+dd{
+	margin: 5px 3%;
+}
+
+/******************Form*******/
+form{
+width:80%;
+margin:4% 10%;
+}
+
+fieldset{
+	margin: 3% auto;
+	padding-left: 2%;
+}
+
+legend, form label, form p{
+	font-weight: bold;
+	margin: 5px auto;
+}
+
+
+input[type=text], input[type=email], input[type=tel], 
+input[type=file], input[type=password], input[type=date], select, textarea{
+margin-bottom: 5px;
+margin-top: 5px;
+width:99%;
+padding: 5px;
+border-radius:5px;
+border:1px solid rgb(11,92,207);
+}
+
+input[type=text].errorBox, input[type=email].errorBox, input[type=tel].errorBox, 
+input[type=file].errorBox, input[type=password].errorBox, input[type=date].errorBox, 
+select.errorBox, textarea.errorBox{
+border-color:rgb(255,0,0);
+}
+
+input[type=submit], input[type=reset]{
+margin-bottom: 20px;
+margin-right: 10px;
+width:30%;
+padding: 15px;
+border-radius:5px;
+border:1px solid rgb(11,92,207);
+background-color: rgb(11,92,207);
+color: aliceblue;
+font-size:15px;
+cursor:pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover
+{
+background-color: rgb(204,204,204);
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus
+, input[type=password]:focus, input[type=file]:focus{
+border-color: #4697e4;
+}
+
+input[type=text].half, input[type=password].half, .half{
+	width : 49%;
+}
+
+input[type=text].quarter, input[type=password].quarter, .quarter{
+	width: 24%;
+}
+
+button{
+	border: none;
+	cursor:pointer;
+}
+
+/******************table*****************/
+table{
+	width: 100%;
+	margin-bottom: 4%;
+}
+table, tr, th, td{
+border:1px solid rgb(11,92,207);
+border-radius:5px;	
+}
+td{
+	padding: 2px 4px;
+}
+
+th, tfoot{
+	background: rgba(11,92,207, 0.8);
+	padding: 10px;
+	font-size: 1.1rem;
+}
+table img{
+	width: 100px;
+}
+table button{
+	background-color:transparent;
+}
